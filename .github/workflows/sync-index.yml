@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '**/meta.json'
+      - '**/*.md'
   workflow_dispatch:
 
 jobs:
@@ -19,12 +20,22 @@ jobs:
           first=true
           for dir in */; do
             if [ -f "${dir}meta.json" ]; then
+              template_name="${dir%/}"
+
               if [ "$first" = true ]; then
                 first=false
               else
                 echo ',' >> index.json
               fi
-              cat "${dir}meta.json" >> index.json
+
+              # Read meta.json and add files array
+              meta=$(cat "${dir}meta.json")
+
+              # Find all files in the template directory (exclude meta.json)
+              files_json=$(find "$dir" -type f ! -name "meta.json" | sed "s|^${dir}||" | sort | jq -R -s -c 'split("\n") | map(select(length > 0))')
+
+              # Merge meta with files array
+              echo "$meta" | jq --argjson files "$files_json" '. + {files: $files}' >> index.json
             fi
           done
           echo ']}' >> index.json

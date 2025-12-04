@@ -3,11 +3,38 @@
     {
       "name": "solocc",
       "task": "code",
-      "keywords": ["claude-code", "solo", "multi-project"],
+      "keywords": [
+        "claude-code",
+        "solo",
+        "multi-project"
+      ],
       "description": "For solo devs managing multiple projects. Stable performance with Claude Code; occasional context drift but quick self-correction.",
-      "languages": ["en", "zh"],
+      "languages": [
+        "en",
+        "zh"
+      ],
       "author": "Dylan",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "files": [
+        "en/CLAUDE.md",
+        "en/prompts/command/00_CONTEXT_REINFORCEMENT.md",
+        "en/prompts/command/01_REVIEW_COMMIT.md",
+        "en/prompts/conduct/CODE_COMMENTS.md",
+        "en/prompts/conduct/COMPATIBILITY.md",
+        "en/prompts/conduct/DEPENDENCIES.md",
+        "en/prompts/conduct/GIT_COMMIT.md",
+        "en/prompts/conduct/GIT_OPERATIONS.md",
+        "en/prompts/conduct/TESTING.md",
+        "zh/CLAUDE.md",
+        "zh/prompts/command/00_CONTEXT_REINFORCEMENT.md",
+        "zh/prompts/command/01_REVIEW_COMMIT.md",
+        "zh/prompts/conduct/CODE_COMMENTS.md",
+        "zh/prompts/conduct/COMPATIBILITY.md",
+        "zh/prompts/conduct/DEPENDENCIES.md",
+        "zh/prompts/conduct/GIT_COMMIT.md",
+        "zh/prompts/conduct/GIT_OPERATIONS.md",
+        "zh/prompts/conduct/TESTING.md"
+      ]
     }
   ]
 }
