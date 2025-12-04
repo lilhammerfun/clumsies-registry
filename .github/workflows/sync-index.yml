@@ -1,0 +1,44 @@
+name: Sync index.json
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/meta.json'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate index.json
+        run: |
+          echo '{"templates":[' > index.json
+          first=true
+          for dir in */; do
+            if [ -f "${dir}meta.json" ]; then
+              if [ "$first" = true ]; then
+                first=false
+              else
+                echo ',' >> index.json
+              fi
+              cat "${dir}meta.json" >> index.json
+            fi
+          done
+          echo ']}' >> index.json
+          # Pretty print
+          cat index.json | jq '.' > index.tmp && mv index.tmp index.json
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: sync index.json from meta.json files"
+            git push
+          fi
