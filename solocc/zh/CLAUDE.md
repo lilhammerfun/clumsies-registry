@@ -4,14 +4,14 @@
 
 ## 一、Prompts 体系
 
-本体系使用 `prompts/` 目录组织所有 AI Agent 相关文档。
+本体系使用 `.prompts/` 目录组织所有 AI Agent 相关文档。
 
 ### 1.1 目录结构
 
 ```
 project-root/
 ├── CLAUDE.md                    # 入口文件（本文件）
-└── prompts/
+└── .prompts/
     ├── biz/                     # 业务上下文
     │   ├── OVERVIEW.md          # 业务概览
     │   └── {module}/            # 按模块组织的业务文档
@@ -83,7 +83,7 @@ project-root/
 ### 2.3 使用方式
 
 用户可以通过以下方式执行指令：
-- **通过序号**："执行指令0" → 读取 `prompts/command/00_*.md`
+- **通过序号**："执行指令0" → 读取 `.prompts/command/00_*.md`
 - **通过名称**："执行 REVIEW_COMMIT" → 读取对应指令文件
 - Agent 按照文档定义的步骤执行任务
 
@@ -103,9 +103,9 @@ project-root/
 在开始任何开发工作前，**必须**阅读相关文档：
 
 1. `CLAUDE.md`（本文档）→ 了解准则和规范
-2. `prompts/biz/` → 理解业务逻辑
-3. `prompts/tech/{项目名}/` → 项目技术文档
-4. `prompts/conduct/` → 通用开发规范
+2. `.prompts/biz/` → 理解业务逻辑
+3. `.prompts/tech/{项目名}/` → 项目技术文档
+4. `.prompts/conduct/` → 通用开发规范
 
 ### 3.2 文档优先开发
 
@@ -132,7 +132,7 @@ project-root/
 
 ### 4.2 开发规范
 
-具体的开发规范请参考 `prompts/conduct/` 目录：
+具体的开发规范请参考 `.prompts/conduct/` 目录：
 - `CODE_COMMENTS.md` — 代码注释规范
 - `DEPENDENCIES.md` — 依赖管理
 - `TESTING.md` — 测试要求
@@ -160,9 +160,9 @@ project-root/
 
 根据项目需要，可以添加以下目录：
 
-- `prompts/biz/` — 业务逻辑文档
-- `prompts/tech/` — 项目技术文档
+- `.prompts/biz/` — 业务逻辑文档
+- `.prompts/tech/` — 项目技术文档
 
 ---
 
-**记住：所有规则、规范和上下文都在 `prompts/` 目录中。**
+**记住：所有规则、规范和上下文都在 `.prompts/` 目录中。**

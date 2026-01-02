@@ -4,14 +4,14 @@
 
 ## 1. Prompts System
 
-This system uses the `prompts/` directory to organize all AI Agent related documentation.
+This system uses the `.prompts/` directory to organize all AI Agent related documentation.
 
 ### 1.1 Directory Structure
 
 ```
 project-root/
 ├── CLAUDE.md                    # Entry file (this file)
-└── prompts/
+└── .prompts/
     ├── biz/                     # Business context
     │   ├── OVERVIEW.md          # Business overview
     │   └── {module}/            # Module-specific business docs
@@ -83,7 +83,7 @@ Brief description of what this command does
 ### 2.3 Usage
 
 Users can execute commands via:
-- **By number**: "execute command 0" → reads `prompts/command/00_*.md`
+- **By number**: "execute command 0" → reads `.prompts/command/00_*.md`
 - **By name**: "execute REVIEW_COMMIT" → reads corresponding command file
 - Agent follows the steps defined in the documentation
 
@@ -103,9 +103,9 @@ Users can execute commands via:
 Before starting any development work, **must** read relevant documentation:
 
 1. `CLAUDE.md` (this document) → Understand guidelines and standards
-2. `prompts/biz/` → Understand business logic
-3. `prompts/tech/{project}/` → Project technical documentation
-4. `prompts/conduct/` → General development standards
+2. `.prompts/biz/` → Understand business logic
+3. `.prompts/tech/{project}/` → Project technical documentation
+4. `.prompts/conduct/` → General development standards
 
 ### 3.2 Documentation-First Development
 
@@ -132,7 +132,7 @@ Follow specific language usage standards based on project configuration:
 
 ### 4.2 Development Standards
 
-Refer to `prompts/conduct/` directory for specific development standards:
+Refer to `.prompts/conduct/` directory for specific development standards:
 - `CODE_COMMENTS.md` — Code commenting standards
 - `DEPENDENCIES.md` — Dependency management
 - `TESTING.md` — Testing requirements
@@ -160,9 +160,9 @@ Higher priority overrides lower priority.
 
 Based on project needs, you can add the following directories:
 
-- `prompts/biz/` — Business logic documentation
-- `prompts/tech/` — Project technical documentation
+- `.prompts/biz/` — Business logic documentation
+- `.prompts/tech/` — Project technical documentation
 
 ---
 
-**Remember: All rules, standards, and context are in the `prompts/` directory.**
+**Remember: All rules, standards, and context are in the `.prompts/` directory.**
