@@ -1,8 +1,9 @@
 {
   "name": "solocc",
-  "description": "For solo devs managing multiple projects. Stable performance with Claude Code; occasional context drift but quick self-correction.",
+  "task": "coding",
+  "description": "For solo devs managing multiple projects with AI coding agents.",
   "author": "dylan",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "prompts": {
     "en": [
       "36995f0ae35fcafcc0c44ac1570a96708302932df0addd1dd60eecc17ea2da90",

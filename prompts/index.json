@@ -4,6 +4,7 @@
     {
       "hash": "36995f0ae35fcafcc0c44ac1570a96708302932df0addd1dd60eecc17ea2da90",
       "type": "command",
+      "task": "coding",
       "lang": "en",
       "path": "command/00_CONTEXT_REINFORCEMENT.md",
       "author": "dylan",
@@ -15,6 +16,7 @@
     {
       "hash": "137fd8d57b1412d60d3bd90eae68c40fdf85d30820f0bd4183fc31f95c88fca4",
       "type": "command",
+      "task": "coding",
       "lang": "en",
       "path": "command/01_REVIEW_COMMIT.md",
       "author": "dylan",
@@ -26,6 +28,7 @@
     {
       "hash": "09c90df9606fb9adfdd7d0c29c91023565d6673fd169595c43c5bb5a60b0e47f",
       "type": "conduct",
+      "task": "coding",
       "lang": "en",
       "path": "conduct/CODE_COMMENTS.md",
       "author": "dylan",
@@ -37,6 +40,7 @@
     {
       "hash": "569ea6c6a3d40628b94acbadd755c5d03fb5f63bc5a5accdc542ddf56a97c712",
       "type": "conduct",
+      "task": "coding",
       "lang": "en",
       "path": "conduct/DEPENDENCIES.md",
       "author": "dylan",
@@ -48,6 +52,7 @@
     {
       "hash": "db182fba45d1e41b3ca03a335489fc85672f9fede54519b8eb1268ea86cc1d9f",
       "type": "conduct",
+      "task": "coding",
       "lang": "en",
       "path": "conduct/TESTING.md",
       "author": "dylan",
@@ -59,6 +64,7 @@
     {
       "hash": "d2bb64f54c8161dd95c16df706fde3e102a8092ec44f780e530e1318a5ee4bcd",
       "type": "conduct",
+      "task": "coding",
       "lang": "en",
       "path": "conduct/COMPATIBILITY.md",
       "author": "dylan",
@@ -70,6 +76,7 @@
     {
       "hash": "bed2e0dd4e10cb19aa85401f418cca834baf56161f5ef30f990eb1ea90630108",
       "type": "conduct",
+      "task": "coding",
       "lang": "en",
       "path": "conduct/GIT_COMMIT.md",
       "author": "dylan",
@@ -81,6 +88,7 @@
     {
       "hash": "ec1012f9182079c9a4af49e398860eca099a1df0b863cfaad65308fa60b34219",
       "type": "conduct",
+      "task": "coding",
       "lang": "en",
       "path": "conduct/GIT_OPERATIONS.md",
       "author": "dylan",
@@ -92,6 +100,7 @@
     {
       "hash": "97a960813c02ddcfce3610f6603a9b45c448910b48ffb52958b915d71ccb94c3",
       "type": "command",
+      "task": "coding",
       "lang": "zh",
       "path": "command/00_CONTEXT_REINFORCEMENT.md",
       "author": "dylan",
@@ -103,6 +112,7 @@
     {
       "hash": "5db17623b13a79ecc56ad5b38122c29744f42ab39d22305fea8760b0856fc2d1",
       "type": "command",
+      "task": "coding",
       "lang": "zh",
       "path": "command/01_REVIEW_COMMIT.md",
       "author": "dylan",
@@ -114,6 +124,7 @@
     {
       "hash": "47f5fca52fc05ec3d3258a61e0cd762e0012a01d3a5c006a0654f8f477a3edfd",
       "type": "conduct",
+      "task": "coding",
       "lang": "zh",
       "path": "conduct/CODE_COMMENTS.md",
       "author": "dylan",
@@ -125,6 +136,7 @@
     {
       "hash": "28ca42a39938c3a8a607b9500be085924e9244a552fb6a1a61c67551bab72d71",
       "type": "conduct",
+      "task": "coding",
       "lang": "zh",
       "path": "conduct/DEPENDENCIES.md",
       "author": "dylan",
@@ -136,6 +148,7 @@
     {
       "hash": "d43751a27ff27e620b602cbde6cd82729cae1a6b9cafdebc983aad3840c0e80a",
       "type": "conduct",
+      "task": "coding",
       "lang": "zh",
       "path": "conduct/TESTING.md",
       "author": "dylan",
@@ -147,6 +160,7 @@
     {
       "hash": "9cf023fed03c29b2b06273a55f7c8e6100a94ccd7debf5aecbf2eb55f41f5b5a",
       "type": "conduct",
+      "task": "coding",
       "lang": "zh",
       "path": "conduct/COMPATIBILITY.md",
       "author": "dylan",
@@ -158,6 +172,7 @@
     {
       "hash": "8ffc621ea4f2bc0960afb8dbd7263764b6cc66d52344398db7f419af0caa1aad",
       "type": "conduct",
+      "task": "coding",
       "lang": "zh",
       "path": "conduct/GIT_COMMIT.md",
       "author": "dylan",
@@ -169,6 +184,7 @@
     {
       "hash": "087e1cbf4cec95dbd4b807b814203731bad93f82860faaba351646cae9fed51e",
       "type": "conduct",
+      "task": "coding",
       "lang": "zh",
       "path": "conduct/GIT_OPERATIONS.md",
       "author": "dylan",
