@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "templates": [
+    {
+      "name": "solocc",
+      "description": "For solo devs managing multiple projects. Stable performance with Claude Code; occasional context drift but quick self-correction.",
+      "author": "dylan",
+      "version": "1.0.1",
+      "languages": ["en", "zh"]
+    }
+  ]
+}

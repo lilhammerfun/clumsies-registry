@@ -1,0 +1,181 @@
+{
+  "version": "1",
+  "prompts": [
+    {
+      "hash": "36995f0ae35fcafcc0c44ac1570a96708302932df0addd1dd60eecc17ea2da90",
+      "type": "command",
+      "lang": "en",
+      "path": "command/00_CONTEXT_REINFORCEMENT.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Context Reinforcement",
+        "description": "Re-review docs and correct behavioral drift when AI violates rules"
+      }
+    },
+    {
+      "hash": "137fd8d57b1412d60d3bd90eae68c40fdf85d30820f0bd4183fc31f95c88fca4",
+      "type": "command",
+      "lang": "en",
+      "path": "command/01_REVIEW_COMMIT.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Review Commit",
+        "description": "Check git changes and generate commit message suggestions"
+      }
+    },
+    {
+      "hash": "09c90df9606fb9adfdd7d0c29c91023565d6673fd169595c43c5bb5a60b0e47f",
+      "type": "conduct",
+      "lang": "en",
+      "path": "conduct/CODE_COMMENTS.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Code Comments Standards",
+        "description": "Standards for writing professional code comments"
+      }
+    },
+    {
+      "hash": "569ea6c6a3d40628b94acbadd755c5d03fb5f63bc5a5accdc542ddf56a97c712",
+      "type": "conduct",
+      "lang": "en",
+      "path": "conduct/DEPENDENCIES.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Dependency Management",
+        "description": "Rules for managing project dependencies via package managers"
+      }
+    },
+    {
+      "hash": "db182fba45d1e41b3ca03a335489fc85672f9fede54519b8eb1268ea86cc1d9f",
+      "type": "conduct",
+      "lang": "en",
+      "path": "conduct/TESTING.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Testing Requirements",
+        "description": "Requirements for automated testing and verification"
+      }
+    },
+    {
+      "hash": "d2bb64f54c8161dd95c16df706fde3e102a8092ec44f780e530e1318a5ee4bcd",
+      "type": "conduct",
+      "lang": "en",
+      "path": "conduct/COMPATIBILITY.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Backward Compatibility",
+        "description": "Guidelines for handling breaking changes in development"
+      }
+    },
+    {
+      "hash": "286722ba1ea6170871497e3e732e283f981248bdca516cf1a85a3285944a1e41",
+      "type": "conduct",
+      "lang": "en",
+      "path": "conduct/GIT_COMMIT.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Git Commit Standards",
+        "description": "Standards for writing clear and consistent commit messages"
+      }
+    },
+    {
+      "hash": "ec1012f9182079c9a4af49e398860eca099a1df0b863cfaad65308fa60b34219",
+      "type": "conduct",
+      "lang": "en",
+      "path": "conduct/GIT_OPERATIONS.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Git Operation Permissions",
+        "description": "Rules for git operations to prevent accidental commits"
+      }
+    },
+    {
+      "hash": "97a960813c02ddcfce3610f6603a9b45c448910b48ffb52958b915d71ccb94c3",
+      "type": "command",
+      "lang": "zh",
+      "path": "command/00_CONTEXT_REINFORCEMENT.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Context Reinforcement",
+        "description": "重新检阅文档并纠正 AI 违规行为"
+      }
+    },
+    {
+      "hash": "5db17623b13a79ecc56ad5b38122c29744f42ab39d22305fea8760b0856fc2d1",
+      "type": "command",
+      "lang": "zh",
+      "path": "command/01_REVIEW_COMMIT.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Review Commit",
+        "description": "检查 git 修改并生成 commit message 建议"
+      }
+    },
+    {
+      "hash": "47f5fca52fc05ec3d3258a61e0cd762e0012a01d3a5c006a0654f8f477a3edfd",
+      "type": "conduct",
+      "lang": "zh",
+      "path": "conduct/CODE_COMMENTS.md",
+      "author": "dylan",
+      "publication": {
+        "name": "代码注释规范",
+        "description": "专业代码注释的书写规范"
+      }
+    },
+    {
+      "hash": "28ca42a39938c3a8a607b9500be085924e9244a552fb6a1a61c67551bab72d71",
+      "type": "conduct",
+      "lang": "zh",
+      "path": "conduct/DEPENDENCIES.md",
+      "author": "dylan",
+      "publication": {
+        "name": "依赖管理",
+        "description": "通过包管理器管理项目依赖的规则"
+      }
+    },
+    {
+      "hash": "d43751a27ff27e620b602cbde6cd82729cae1a6b9cafdebc983aad3840c0e80a",
+      "type": "conduct",
+      "lang": "zh",
+      "path": "conduct/TESTING.md",
+      "author": "dylan",
+      "publication": {
+        "name": "测试要求",
+        "description": "自动化测试和验证的要求"
+      }
+    },
+    {
+      "hash": "9cf023fed03c29b2b06273a55f7c8e6100a94ccd7debf5aecbf2eb55f41f5b5a",
+      "type": "conduct",
+      "lang": "zh",
+      "path": "conduct/COMPATIBILITY.md",
+      "author": "dylan",
+      "publication": {
+        "name": "向后兼容原则",
+        "description": "开发阶段处理 breaking changes 的指南"
+      }
+    },
+    {
+      "hash": "3965f64c250fa16961852511ce23b1f08e2e872f6cbc49a97af814091c0476b9",
+      "type": "conduct",
+      "lang": "zh",
+      "path": "conduct/GIT_COMMIT.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Git Commit 规范",
+        "description": "编写清晰一致的 commit message 的规范"
+      }
+    },
+    {
+      "hash": "087e1cbf4cec95dbd4b807b814203731bad93f82860faaba351646cae9fed51e",
+      "type": "conduct",
+      "lang": "zh",
+      "path": "conduct/GIT_OPERATIONS.md",
+      "author": "dylan",
+      "publication": {
+        "name": "Git 操作权限",
+        "description": "Git 操作规则以防止意外提交"
+      }
+    }
+  ]
+}

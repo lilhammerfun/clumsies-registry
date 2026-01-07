@@ -1,58 +1,73 @@
-name: Sync index.json
+name: Validate Registry
 
 on:
   push:
     branches: [main]
     paths:
-      - '**/meta.json'
-      - '**/*.md'
+      - 'prompts/**'
+      - 'templates/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'prompts/**'
+      - 'templates/**'
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  sync:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate index.json
+      - name: Validate prompt hashes
         run: |
-          echo '{"templates":[' > index.json
-          first=true
-          for dir in */; do
-            if [ -f "${dir}meta.json" ]; then
-              template_name="${dir%/}"
-
-              if [ "$first" = true ]; then
-                first=false
-              else
-                echo ',' >> index.json
-              fi
-
-              # Read meta.json and add files array
-              meta=$(cat "${dir}meta.json")
-
-              # Find all files in the template directory (exclude meta.json)
-              files_json=$(find "$dir" -type f ! -name "meta.json" | sed "s|^${dir}||" | sort | jq -R -s -c 'split("\n") | map(select(length > 0))')
-
-              # Merge meta with files array
-              echo "$meta" | jq --argjson files "$files_json" '. + {files: $files}' >> index.json
+          cd prompts
+          errors=0
+          for f in *.md; do
+            if [ "$f" = "*.md" ]; then
+              continue
+            fi
+            expected_hash="${f%.md}"
+            actual_hash=$(shasum -a 256 "$f" | cut -d' ' -f1)
+            if [ "$expected_hash" != "$actual_hash" ]; then
+              echo "ERROR: Hash mismatch for $f"
+              echo "  Expected: $expected_hash"
+              echo "  Actual:   $actual_hash"
+              errors=$((errors + 1))
             fi
           done
-          echo ']}' >> index.json
-          # Pretty print
-          cat index.json | jq '.' > index.tmp && mv index.tmp index.json
-
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: sync index.json from meta.json files"
-            git push
+          if [ $errors -gt 0 ]; then
+            echo "Found $errors hash mismatches"
+            exit 1
           fi
+          echo "All prompt hashes verified"
+
+      - name: Validate index files
+        run: |
+          # Check prompts/index.json exists and is valid JSON
+          if [ ! -f prompts/index.json ]; then
+            echo "ERROR: prompts/index.json not found"
+            exit 1
+          fi
+          cat prompts/index.json | jq . > /dev/null || exit 1
+          echo "prompts/index.json is valid"
+
+          # Check templates/index.json exists and is valid JSON
+          if [ ! -f templates/index.json ]; then
+            echo "ERROR: templates/index.json not found"
+            exit 1
+          fi
+          cat templates/index.json | jq . > /dev/null || exit 1
+          echo "templates/index.json is valid"
+
+          # Verify all prompt hashes in index exist as files
+          for hash in $(cat prompts/index.json | jq -r '.prompts[].hash'); do
+            if [ ! -f "prompts/${hash}.md" ]; then
+              echo "ERROR: Missing prompt file for hash: $hash"
+              exit 1
+            fi
+          done
+          echo "All indexed prompts have corresponding files"

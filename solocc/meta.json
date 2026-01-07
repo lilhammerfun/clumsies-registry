@@ -1,9 +1,0 @@
-{
-	"name": "solocc",
-	"task": "code",
-	"keywords": ["claude-code", "solo", "multi-project"],
-	"description": "For solo devs managing multiple projects. Stable performance with Claude Code; occasional context drift but quick self-correction.",
-	"languages": ["en", "zh"],
-	"author": "Dylan",
-	"version": "1.0.1"
-}
