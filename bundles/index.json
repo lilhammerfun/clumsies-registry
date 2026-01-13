@@ -1,23 +1,4 @@
 {
   "bundles": [
-    {
-      "name": "general-coding",
-      "task": "coding",
-      "description": "General Coding Prompt Bundle",
-      "created_at": "1768298557",
-      "meta_prompt": "",
-      "prompts": [
-        { "hash": "2d32a387fa39dcaace83912027e956366d2a76942c3b8cc0dad079190a06c113", "path": "conduct/GIT_OPERATIONS.md" },
-        { "hash": "2f295729a7b4dbccbcaa543175b8c45fa9ce2bfa992dbd05b2afaf7346e9b985", "path": "conduct/ZIG_STYLE.md" },
-        { "hash": "9e9d23fa23fb0a2551511b1f033401f35897af0c0ec46be5db3e5807347256d9", "path": "conduct/DEPENDENCIES.md" },
-        { "hash": "b0066c8e670ad3f906b836797f5b517b758f1482cce38f2b98caff84899d7b86", "path": "conduct/TESTING.md" },
-        { "hash": "4ed25d655598930544229218ee1516a8e95245bdad1cb90af7fdaa7fed2135c5", "path": "conduct/GIT_COMMIT.md" },
-        { "hash": "1d0abf3e20199e03c42223bf406d07e885787cbb82f4e0ac2ecb37f7a70d397f", "path": "conduct/CODE_COMMENTS.md" },
-        { "hash": "9c7c6b303261e8003ab0b20208b590057d701a93f7ec487146d3ee03047501cd", "path": "conduct/COMPATIBILITY.md" },
-        { "hash": "a54db88f97145d888bb33dc02b2b6274a55edb0a1a9805df7e8db35ed683c4ab", "path": "command/01_REVIEW_COMMIT.md" },
-        { "hash": "cda4c137a6d9c6a224046ade14013e5cebd1350c2565aaaa48458c12645e79ca", "path": "command/02_RELEASE.md" },
-        { "hash": "8d5bd55554631874bef285b0c689eaaee7a31f7a3f88e42eb22283c2025e6273", "path": "command/00_CONTEXT_REINFORCEMENT.md" }
-      ]
-    }
   ]
 }
