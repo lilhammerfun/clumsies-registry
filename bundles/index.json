@@ -1,11 +1,4 @@
 {
   "bundles": [
-    {
-      "hash": "1c520156b4da88717a3b6c38ce91834706367918f48408a5104e5e5b6a61b131",
-      "name": "zig-coding",
-      "task": "-",
-      "description": "zig coding prompt bundle",
-      "created_at": "1768292345"
-    }
   ]
 }
