@@ -1,0 +1,62 @@
+---
+name: opus-coding
+description: Coding conduct and commands optimized for Claude Opus 4.5
+task: coding
+---
+
+# Prompts Index
+
+> 本文件是 `.prompts/` 目录的自然语言索引，帮助 AI Agent 理解和导航提示词体系。
+
+## 目录结构
+
+```
+agent-workspace/
+├── CLAUDE.md              # 本文件 - prompts 索引
+└── .prompts/
+    ├── context/           # 项目上下文（必读）
+    ├── conduct/           # 行为规范（始终生效）
+    ├── command/           # 可执行指令（按需调用）
+    └── journal/           # 检查点日志（问题记录）
+```
+
+## 目录说明
+
+| 目录 | 加载时机 | 内容 |
+|------|----------|------|
+| `context/` | 开始工作前必读 | 项目目标、架构分析、技术调研、特殊上下文等 |
+| `conduct/` | 始终生效 | 代码风格、Git 规范、测试要求等 |
+| `command/` | 用户触发时执行 | 可复用的任务流程，通过序号或名称调用 |
+| `journal/` | 遇到问题时参考 | 踩坑记录、重大决策转变、关键解决方案 |
+
+## 文件命名
+
+所有文件统一使用：`NN_UPPER_SNAKE_CASE.md`
+
+- 示例：`00_OVERVIEW.md`, `01_GIT_COMMIT.md`
+- 序号便于快速引用："执行指令 0"、"查看 context 01"
+
+## 指令调用
+
+- 通过序号："执行指令 0" → `.prompts/command/00_*.md`
+- 通过名称："执行 REVIEW_COMMIT" → 匹配对应文件
+
+## 指令格式
+
+```markdown
+# 指令名称
+
+## 描述
+简要说明指令作用
+
+## 执行步骤
+1. 第一步
+2. 第二步
+
+## 注意事项
+- 约束条件
+```
+
+---
+
+**开始工作前，请先阅读 `.prompts/context/` 了解项目背景。**
