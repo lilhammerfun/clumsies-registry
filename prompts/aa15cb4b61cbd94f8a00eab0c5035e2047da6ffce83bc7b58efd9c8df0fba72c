@@ -1,0 +1,81 @@
+---
+description: Add Clumsies protocol frontmatter to prompt files
+category: command
+---
+
+# Add Frontmatter
+
+## 描述
+
+为缺少 frontmatter 的 prompt 文件添加 Clumsies 协议规范的 YAML frontmatter。
+
+## Frontmatter 格式
+
+```yaml
+---
+description: <一句话描述文件作用>
+category: <conduct|command>
+---
+```
+
+## Category 定义
+
+| Category | 用途 | 示例 |
+|----------|------|------|
+| `conduct` | 行为规范、代码风格、始终生效的规则 | GIT_COMMIT.md, ZIG_STYLE.md |
+| `command` | 可执行指令、按需调用的流程 | RELEASE.md, REVIEW_COMMIT.md |
+
+> **注意**: `context/` 目录存放项目特定上下文（背景、调研、设计），不具通用性，不需要 frontmatter，也不会注册到 registry。
+
+## 执行步骤
+
+1. **读取目标文件**
+   - 检查是否已有 frontmatter（以 `---` 开头）
+   - 如已有，询问是否更新
+
+2. **分析文件内容**
+   - 根据文件路径推断 category（如 `.prompts/conduct/` → `conduct`）
+   - 根据标题和内容生成 description（一句话，英文，50字符内）
+
+3. **生成 frontmatter**
+   ```yaml
+   ---
+   description: <推断的描述>
+   category: <推断的类别>
+   ---
+   ```
+
+4. **展示并确认**
+   - 向用户展示生成的 frontmatter
+   - 等待用户确认或修改
+   - 确认后写入文件开头
+
+## 示例
+
+**输入文件** `conduct/CODE_STYLE.md`:
+```markdown
+# 代码风格规范
+
+## 命名
+- 变量用 camelCase
+- 常量用 UPPER_SNAKE
+...
+```
+
+**生成结果**:
+```markdown
+---
+description: Code style and naming conventions
+category: conduct
+---
+
+# 代码风格规范
+...
+```
+
+## 注意事项
+
+- description 使用英文，简洁明了
+- 如果文件路径不在标准目录，需询问用户确认 category
+- 保留原文件所有内容，仅在开头添加 frontmatter
+- 严禁自动写入，必须用户确认

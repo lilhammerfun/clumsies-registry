@@ -87,6 +87,14 @@
       "format": "md",
       "category": "command",
       "created_at": "1768322975"
+    },
+    {
+      "hash": "aa15cb4b61cbd94f8a00eab0c5035e2047da6ffce83bc7b58efd9c8df0fba72c",
+      "name": "ADD_FRONTMATTER",
+      "description": "Add Clumsies protocol frontmatter to prompt files",
+      "format": "md",
+      "category": "command",
+      "created_at": "1768332303"
     }
   ]
 }
