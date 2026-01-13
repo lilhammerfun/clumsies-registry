@@ -1,0 +1,24 @@
+---
+description: Code comment standards and forbidden patterns
+category: conduct
+---
+
+# 代码注释规范
+
+**核心原则**：代码注释必须是最终版本，不能包含任何思考过程或中间推理。
+
+## 严禁的注释类型
+
+- 思考过程：`// Wait, let me recalculate...`、`// Hmm, this might be...`
+- 个人对话：`// Actually...`、`// Let me think...`
+- 模糊标记：`// TODO: Fix this later`（必须说明具体内容）
+
+## 允许的注释类型
+
+- **技术说明**：解释复杂逻辑、算法原理、公式推导
+- **功能标记**：`// TODO: Implement signature verification for production`
+- **安全警告**：`// SECURITY: Must validate inputs before...`
+
+## 注释原则
+
+所有代码注释必须假设读者是其他开发者，而不是自己的备忘录。

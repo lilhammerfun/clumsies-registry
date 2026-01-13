@@ -1,0 +1,83 @@
+---
+name: clumsies-protocol
+description: AI Agent prompt management protocol
+task: coding
+---
+
+# Clumsies Protocol
+
+> AI Agent 提示词管理协议，通过 `.prompts/` 目录组织 Agent 行为规范。
+
+## 目录结构
+
+```
+workspace/
+├── CLAUDE.md              # 入口文件（本文件）
+└── .prompts/              # 独立 git 仓库
+    ├── conduct/           # 行为规范（始终生效）
+    └── command/           # 可执行指令
+```
+
+### 目录说明
+
+| 目录 | 作用 | 加载方式 |
+|------|------|---------|
+| `conduct/` | 行为规范 | 始终生效，Agent 必须遵守 |
+| `command/` | 自定义指令 | 按需执行，用户触发 |
+
+---
+
+## 文件命名规范
+
+- **文档文件**：全大写 SNAKE_CASE
+  - 示例：`CODE_STYLE.md`, `GIT_COMMIT.md`
+
+- **指令文件**：序号前缀 + 全大写 SNAKE_CASE
+  - 示例：`00_REVIEW.md`, `01_REFACTOR.md`
+  - 序号便于快速引用（"执行指令 0"）
+
+---
+
+## 指令系统
+
+### 指令格式
+
+```markdown
+# 指令名称
+
+## 描述
+简要说明指令作用
+
+## 执行步骤
+1. 第一步
+2. 第二步
+...
+```
+
+### 使用方式
+
+- **通过序号**："执行指令 0" → `.prompts/command/00_*.md`
+- **通过名称**："执行 REVIEW" → 匹配对应指令文件
+
+---
+
+## Agent 行为准则
+
+### 语言规范
+
+- **对话和思考**：中文
+- **代码和注释**：英文
+- **Git commit**：英文
+
+### 执行优先级
+
+冲突时按以下顺序处理：
+
+1. `CLAUDE.md` — 入口准则
+2. `conduct/` — 行为规范
+3. 用户指令 — 具体任务
+
+---
+
+@import .prompts/conduct/
+@import .prompts/command/

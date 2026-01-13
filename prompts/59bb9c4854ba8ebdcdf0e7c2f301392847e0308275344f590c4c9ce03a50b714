@@ -1,0 +1,22 @@
+---
+description: Generate commit message from current git changes
+category: command
+---
+
+# Review Commit
+
+## 描述
+
+检查当前git修改，生成commit message建议。
+
+## 执行步骤
+
+1. 运行 `git status` 和 `git diff` 查看改动
+2. 根据 `conduct/GIT_COMMIT.md` 生成commit message
+3. 向用户展示建议，等待确认
+
+## 注意事项
+
+- 严禁自动提交
+- 使用英文
+- 发现敏感文件时警告用户

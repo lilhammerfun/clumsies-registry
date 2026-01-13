@@ -1,0 +1,92 @@
+{
+  "prompts": [
+    {
+      "hash": "669208b161027cc027c5323e3b82bad60d2761e32ebe4de8bedc15c7bf81271b",
+      "name": "GIT_OPERATIONS",
+      "description": "Git command permissions and restrictions",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "0dc9ebd62ec974ec0ce40890add26b1ddff4eafd3eb4d8022b04ba0da0999537",
+      "name": "GIT_COMMIT",
+      "description": "Commit message format and conventions",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "dcd34c20186fa081a21c7a480fa7ba4a878ba07719f64753dd074ad2e3a290e9",
+      "name": "CODE_COMMENTS",
+      "description": "Code comment standards and forbidden patterns",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "70a2f4ebd3e8c2d3f95c29e90ac7e46eab93e98b30b8e3dd6f7b7c761fa99b83",
+      "name": "TESTING",
+      "description": "Testing requirements and practices",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "35719294a7e76a139df3242248574ea15ba45f13a9426060f03a90ea9a13714c",
+      "name": "COMPATIBILITY",
+      "description": "Breaking changes policy during development",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "636f6dd57d50a7b2f28aa840f1783266c9181fbe0974eb65ff5719a62ed88031",
+      "name": "ZIG_STYLE",
+      "description": "Zig coding conventions and naming rules",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "34cc133f7c0a48dc778768916a5ac2036ae3dbab90fadf7ef5bae3b6f97b15ee",
+      "name": "DEPENDENCIES",
+      "description": "Package management rules for different project types",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "ce90f91d42d97de51dfab1c3f6d3529aa1a133a070a1c2b5bd277a1c0b42e1bc",
+      "name": "E2E_TEST",
+      "description": "End-to-end testing guide for clumsies CLI v2",
+      "format": "md",
+      "category": "command",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "59bb9c4854ba8ebdcdf0e7c2f301392847e0308275344f590c4c9ce03a50b714",
+      "name": "REVIEW_COMMIT",
+      "description": "Generate commit message from current git changes",
+      "format": "md",
+      "category": "command",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "a423d7624045432b4c57d71fd7dfd4311dbb649d6e2e1df69ed3507b8cbbb7e2",
+      "name": "RELEASE",
+      "description": "Cross-compile and create GitHub release for clumsies",
+      "format": "md",
+      "category": "command",
+      "created_at": "1768322975"
+    },
+    {
+      "hash": "93beb07e5369f1b3a196d954472ffb73aac3036f086d973cd70b1d04da92d2d8",
+      "name": "CONTEXT_REINFORCEMENT",
+      "description": "Re-read prompts and correct execution when AI violates rules",
+      "format": "md",
+      "category": "command",
+      "created_at": "1768322975"
+    }
+  ]
+}

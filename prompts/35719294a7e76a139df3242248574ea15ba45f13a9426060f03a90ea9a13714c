@@ -1,0 +1,25 @@
+---
+description: Breaking changes policy during development
+category: conduct
+---
+
+# 向后兼容原则
+
+**核心原则**：项目处于开发阶段，随时有breaking changes。
+
+## 严禁的做法
+
+- ❌ 编写deprecated函数
+- ❌ 添加兼容层
+- ❌ 保留旧接口
+- ❌ 使用`_unusedVar`等向后兼容hack
+
+## 推荐的做法
+
+- ✅ 重构时直接修改现有接口
+- ✅ 删除未使用的代码
+- ✅ 保持代码简洁和正确性优先
+
+## 例外情况
+
+只有在用户明确要求时才考虑向后兼容。

@@ -1,0 +1,58 @@
+---
+description: Commit message format and conventions
+category: conduct
+---
+
+# Git Commit 规范
+
+## 格式
+
+**简单提交**（单一改动）：
+```
+<type>: <summary>
+```
+
+**复杂提交**（多处改动）：
+```
+<type>: <summary>
+
+- change 1
+- change 2
+- change 3
+```
+
+## Type
+
+`feat`, `fix`, `refactor`, `perf`, `docs`, `style`, `test`, `chore`, `improve`
+
+混合修改时选最能代表核心变更的类型。
+
+## 规则
+
+- 标题50字符内，说明改了什么
+- 列表按重要性排序，核心逻辑在前，技术细节在后
+- 禁止：文件统计、测试结果、时间、性能数字、个人想法
+
+## 示例
+
+**简单**：
+```
+fix: correct typo in error message
+```
+
+**复杂**：
+```
+refactor: migrate to reserve-based pricing
+
+- Add init trade insertion with reserves from IDOCreated event
+- Update indexer to record reserve_usdc and reserve_tokens
+- Calculate price from reserves on-the-fly
+```
+
+## AI 署名
+
+```
+🤖 Generated with [Claude Code](https://claude.com/claude-code)
+
+Co-Authored-By: Claude <model-name> <noreply@anthropic.com>
+```
