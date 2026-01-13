@@ -5,6 +5,7 @@
       "task": "coding",
       "description": "General Coding Prompt Bundle",
       "created_at": "1768298557",
+      "meta_prompt": "",
       "prompts": [
         { "hash": "2d32a387fa39dcaace83912027e956366d2a76942c3b8cc0dad079190a06c113", "path": "conduct/GIT_OPERATIONS.md" },
         { "hash": "2f295729a7b4dbccbcaa543175b8c45fa9ce2bfa992dbd05b2afaf7346e9b985", "path": "conduct/ZIG_STYLE.md" },
