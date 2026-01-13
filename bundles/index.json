@@ -1,10 +1,4 @@
 {
   "bundles": [
-    {
-      "hash": "general-coding",
-      "name": "general-coding",
-      "description": "General Coding Prompt Bundle",
-      "created_at": "1768289124"
-    }
   ]
 }
