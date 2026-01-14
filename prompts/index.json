@@ -119,6 +119,14 @@
       "format": "md",
       "category": "conduct",
       "created_at": "1768401094"
+    },
+    {
+      "hash": "5049af565663fbde372de0e36b02caa854de0d3c1d07c5cbacfe717c077ca000",
+      "name": "JOURNAL",
+      "description": "Record development checkpoints, decisions and insights",
+      "format": "md",
+      "category": "command",
+      "created_at": "1768407788"
     }
   ]
 }
