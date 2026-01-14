@@ -103,6 +103,14 @@
       "format": "md",
       "category": "command",
       "created_at": "1768401028"
+    },
+    {
+      "hash": "2eeb63f2725bc15913755927ed2fd6386c05ae0a03ded45c3eb4c43fd4e801a0",
+      "name": "SQLX",
+      "description": "SQLx compile-time query validation rules",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1768401062"
     }
   ]
 }

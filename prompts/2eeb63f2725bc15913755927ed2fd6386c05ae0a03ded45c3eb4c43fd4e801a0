@@ -1,0 +1,39 @@
+---
+description: SQLx compile-time query validation rules
+category: conduct
+---
+
+# SQLx 使用规范
+
+**原则**：必须使用 SQLx 宏进行编译时查询验证，禁止为绕过编译错误而降级为运行时查询。
+
+## 迁移文件命名
+
+SQLx 迁移工具强制要求数字前缀（如 `24_pam_auth.sql`），这是工具限制，无法绕过。
+
+## 强制要求
+
+- **必须使用**：`sqlx::query!`、`sqlx::query_as!`、`sqlx::query_scalar!` 等宏
+- **禁止使用**：`sqlx::query()`、`sqlx::query_as::<_, T>()` 等动态查询函数
+
+## 编译失败的正确处理
+
+当遇到 `error communicating with database` 编译错误时：
+
+```
+error: error communicating with database: Connection refused
+```
+
+**正确做法**：启动数据库服务，确保 `DATABASE_URL` 指向可用的数据库实例
+
+**错误做法**：将 `query!` 宏改为 `query()` 函数以绕过编译检查
+
+## 为什么
+
+SQLx 的编译时验证是其核心价值：
+- 在编译阶段捕获 SQL 语法错误和类型不匹配
+- 自动推导返回类型，无需手动指定
+- 检测表名、列名拼写错误
+- 确保参数类型与数据库 schema 一致
+
+放弃这个能力等于放弃 Rust 的类型安全优势。
