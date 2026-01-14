@@ -95,6 +95,14 @@
       "format": "md",
       "category": "command",
       "created_at": "1768332303"
+    },
+    {
+      "hash": "48c57fe39773a93441a58a1dd8dfae5560be44cf6c107bd18952ba8d70281c15",
+      "name": "COLLABORATION",
+      "description": "Collaboration workflow for tech docs repository",
+      "format": "md",
+      "category": "command",
+      "created_at": "1768401028"
     }
   ]
 }

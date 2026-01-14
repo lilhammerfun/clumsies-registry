@@ -1,0 +1,39 @@
+---
+description: Collaboration workflow for tech docs repository
+category: command
+---
+
+# 协作流程
+
+## 描述
+
+定义 avinasi-tech-docs 仓库的协作流程，包括分支管理和提交规范。
+
+## 工作流程
+
+```bash
+# 1. clone 仓库
+git clone git@github.com:avinasi/avinasi-tech-docs.git
+
+# 2. 创建调研分支
+git checkout -b research/topic-name
+
+# 3. AI 协助调研，生成 .md 文件
+
+# 4. 推送分支
+git add . && git commit -m "add: topic research"
+git push -u origin research/topic-name
+
+# 5. 创建 PR → 团队讨论 → 确定方案后 merge
+```
+
+## 分支命名
+
+- `research/xxx` - 技术调研
+- `fix/xxx` - 修正已有文档
+
+## Commit 规范
+
+- `add: xxx` - 新增文档
+- `update: xxx` - 更新文档
+- `fix: xxx` - 修正错误
