@@ -111,6 +111,14 @@
       "format": "md",
       "category": "conduct",
       "created_at": "1768401062"
+    },
+    {
+      "hash": "c721d16d96992d53220d193ece8fc052399832bc103ea9be8c56b431ea6d4f4f",
+      "name": "TECH_RESEARCH_WRITING",
+      "description": "Technical documentation writing guidelines",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1768401094"
     }
   ]
 }

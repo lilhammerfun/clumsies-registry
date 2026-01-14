@@ -1,0 +1,135 @@
+---
+description: Technical documentation writing guidelines
+category: conduct
+---
+
+# 技术文档写作规范
+
+## 一、核心原则
+
+**这是团队内部技术讨论文档，不是教程，不是对话。**
+
+## 二、文档格式
+
+标题下方署名作者和日期：
+
+```markdown
+# 文档标题
+
+**作者**：Dylan
+**日期**：2026-01-12
+```
+
+参考来源直接嵌入正文，附带原文引用（不要在文档底部单独列出）：
+
+```markdown
+✅ [OHDSI 2024 Symposium](https://www.ohdsi.org/2024showcase-44/)：
+
+> OMOP CDM has now been adopted by more than 83 countries with 974 million unique patient records.
+
+❌ 只给链接不附原文
+❌ 在文档底部列出参考来源
+```
+
+## 三、两个写作核心
+
+### 1. 用段落阐述逻辑，慎用无序列表
+
+关键逻辑必须用段落完整表达，而非无序列表堆砌。无序列表容易产生无意义的废话罗列。
+
+**何时用段落**：阐述因果关系、论证过程、技术原理
+
+```markdown
+✅ Blob 数据在 18 天后会被删除，但 KZG 承诺作为密码学指纹会永久保留在链上。这意味着即使原始数据不在链上，我仍然可以用 KZG 承诺验证链下存储的数据是否被篡改。基于这个特性，审计日志可以采用 Blob + 自建存储的方案。
+
+❌ Blob 特点：
+  - 18 天后删除
+  - KZG 承诺永久
+  - 可以验证数据
+  - 适合审计日志
+```
+
+**何时用表格**：方案对比，一眼看清差别
+
+```markdown
+| 方案 | 链上存储 | 成本 | 永久性 |
+|------|---------|------|--------|
+| Event Log | 全部数据 | 高 | ✅ |
+| Blob | KZG 承诺 | 低 | ✅ |
+```
+
+**何时用无序列表**：列举关键要点（非论证）
+
+```markdown
+需要记录的 TEE 操作：
+- decrypt_dataset
+- compute_query
+- permission_check
+```
+
+### 2. 关键论点必须有真实 Reference
+
+技术结论需要标注来源，不能凭印象陈述。引用时附带原文：
+
+```markdown
+✅ [Ethereum Yellow Paper Appendix G](https://ethereum.github.io/yellowpaper/paper.pdf)：
+
+> Glogdata: 8. This is paid for each byte in a LOG operation's data.
+
+基于此，Event Log 每字节消耗 8 gas。
+
+❌ Event Log 大概 8 gas 每字节（只给链接，不附原文）
+```
+
+```markdown
+✅ [Dune Analytics](https://dune.com/hildobby/blobs)：
+
+> Post-EIP-4844, Arbitrum transaction fees dropped from $0.37 to $0.012.
+
+❌ Blob 让 L2 费用降低了很多（无来源）
+```
+
+## 四、人称
+
+使用作者"我"的口吻，不是对话。
+
+```markdown
+✅ 我评估了 Blob 和 Event Log 两种方案。经过分析，我认为 Blob 更适合大批量场景。
+
+❌ 你可能首先想到使用 Blob...
+❌ 让我来解释一下...
+```
+
+## 五、图表规范
+
+架构图、流程图不要手写 ASCII，使用 Mermaid 语法。
+
+```markdown
+❌ 手写 ASCII 图
+┌─────────┐    ┌─────────┐
+│  TEE    │───→│  Chain  │
+└─────────┘    └─────────┘
+
+✅ Mermaid flowchart
+​```mermaid
+flowchart LR
+    TEE --> Chain
+​```
+
+✅ Mermaid sequenceDiagram
+​```mermaid
+sequenceDiagram
+    User->>TEE: 请求数据
+    TEE->>Chain: 提交日志
+​```
+```
+
+## 六、避免的写法
+
+| 避免 | 原因 |
+|------|------|
+| 用无序列表表达因果逻辑 | 用段落阐述 |
+| 无 reference 的技术结论 | 标注来源 |
+| "值得注意的是" | 直接陈述 |
+| "众所周知" | 给出依据或删除 |
+| 过多感叹号 | 技术文档保持克制 |
