@@ -1,0 +1,98 @@
+---
+description: Standards for writing clumsies protocol prompts
+category: conduct
+---
+
+# Prompt 编写规范
+
+本规范定义 conduct 和 command 类型 prompt 的格式要求。
+
+## Frontmatter
+
+所有 prompt 必须包含 YAML frontmatter：
+
+```yaml
+---
+description: One-line English description (50 chars max)
+category: conduct|command
+---
+```
+
+| 字段 | 要求 |
+|------|------|
+| `description` | 英文，一句话，50字符内，说明文件作用 |
+| `category` | `conduct`（行为规范）或 `command`（可执行指令） |
+
+## 文件命名
+
+格式：`NN_UPPER_SNAKE_CASE.md`
+
+- `NN`：两位序号，从 00 开始
+- 名称：全大写，下划线分隔
+
+## Conduct 结构
+
+行为规范，始终生效的约束。
+
+```markdown
+---
+description: ...
+category: conduct
+---
+
+# 中文标题
+
+核心原则一句话说明。
+
+## 规则/类型/格式
+
+具体规范内容。
+
+## 示例（可选）
+
+## 注意事项（可选）
+```
+
+特点：
+- 约束性（定义什么能做、什么不能做）
+- 通用性（对所有开发活动生效）
+
+## Command 结构
+
+可执行指令，用户触发时执行。
+
+```markdown
+---
+description: ...
+category: command
+---
+
+# 指令名称
+
+## 描述
+
+一句话说明指令作用。
+
+## 执行步骤
+
+1. 第一步
+2. 第二步
+3. ...
+
+## 注意事项
+
+- 约束条件
+```
+
+特点：
+- 流程导向（明确的步骤序列）
+- 任务导向（完成特定工作）
+
+## 语言规则
+
+| 位置 | 语言 |
+|------|------|
+| frontmatter description | 英文 |
+| 标题 | 中文 |
+| 正文 | 中文 |
+| 代码/命令 | 英文 |

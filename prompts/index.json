@@ -127,6 +127,14 @@
       "format": "md",
       "category": "conduct",
       "created_at": "1769066636"
+    },
+    {
+      "hash": "1125580d29f35cd4b2355e59a33d4f32f43d4e3f6cd4a1269672c7d262804aad",
+      "name": "PROMPT_WRITING",
+      "description": "Standards for writing clumsies protocol prompts",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769067611"
     }
   ]
 }
