@@ -9,14 +9,6 @@
       "created_at": "1768322975"
     },
     {
-      "hash": "0dc9ebd62ec974ec0ce40890add26b1ddff4eafd3eb4d8022b04ba0da0999537",
-      "name": "GIT_COMMIT",
-      "description": "Commit message format and conventions",
-      "format": "md",
-      "category": "conduct",
-      "created_at": "1768322975"
-    },
-    {
       "hash": "dcd34c20186fa081a21c7a480fa7ba4a878ba07719f64753dd074ad2e3a290e9",
       "name": "CODE_COMMENTS",
       "description": "Code comment standards and forbidden patterns",
