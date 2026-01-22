@@ -119,6 +119,14 @@
       "format": "md",
       "category": "command",
       "created_at": "1768407788"
+    },
+    {
+      "hash": "c45eb908d29747fc3a8528f4bddca646df572044ec09148dfa98cf617e765dde",
+      "name": "GIT_COMMIT",
+      "description": "Commit message format and conventions",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769066636"
     }
   ]
 }
