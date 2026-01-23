@@ -1,0 +1,56 @@
+---
+description: When to use code blocks in documentation
+category: conduct
+---
+
+# 代码块使用规范
+
+## 何时使用代码块
+
+代码块（` ``` `）**只用于**：
+
+1. **实际代码**：任何编程语言的代码片段
+2. **命令行**：终端命令、shell 脚本
+3. **配置文件**：YAML、JSON、TOML 等
+4. **数据结构定义**：类型定义、schema
+5. **Mermaid 图表**：flowchart、sequenceDiagram 等
+
+## 何时不使用代码块
+
+以下内容**不应该**放在代码块里：
+
+1. **概念说明**：用普通段落或列表
+2. **问答/对话**：用引用块（`>`）或普通文字
+3. **步骤描述**：用有序列表
+4. **对比说明**：用表格或列表
+
+## 示例
+
+### 错误
+
+```markdown
+​```
+Prysm 计算的 state_root = 0xabc...
+Lighthouse 计算的 state_root = ???
+
+如果不一致，共识就崩了！
+​```
+```
+
+### 正确
+
+```markdown
+**问题**：多客户端如何对"同一个 BeaconState"达成一致？
+
+- Prysm 计算的 `state_root = 0xabc...`
+- Lighthouse 计算的 `state_root = ???`
+
+如果不一致，共识就崩了！
+```
+
+## 内联代码
+
+单个技术术语、变量名、函数名使用内联代码（`` ` ``）：
+
+- 正确：`state_root`、`hashTreeRoot()`、`BeamState`
+- 错误：用代码块包裹单个术语

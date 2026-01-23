@@ -135,6 +135,86 @@
       "format": "md",
       "category": "conduct",
       "created_at": "1769067611"
+    },
+    {
+      "hash": "f1ff451ba510f89e83ba02e9a02537d5d4da0ddd4fd2cc567f636662664bbf97",
+      "name": "TERMINOLOGY",
+      "description": "Annotate terms with English originals",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769165338"
+    },
+    {
+      "hash": "ac6762bab0f24bad4c234a867a2b73d4792ebad9393f9ec13a5b95160bee1461",
+      "name": "CODE_BLOCK_USAGE",
+      "description": "When to use code blocks in documentation",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769165338"
+    },
+    {
+      "hash": "9bc0c12f633da4bd45bb8dadc8aa7d1e959873f3bb0dd19d1402c17759116520",
+      "name": "LATEX_FORMAT",
+      "description": "LaTeX math formatting rules",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769165338"
+    },
+    {
+      "hash": "8506fa06676efd245c4ac0b0aa12e950d45327f515ac5561a731ff9b46e6028a",
+      "name": "TUTORIALS_STYLE",
+      "description": "Style guide for writing tutorials",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769165338"
+    },
+    {
+      "hash": "b79d43512b6ccbdf80c2d9470fedd123d0f415648c24f25fdbc56ca64ccc20a7",
+      "name": "TEACHING_PRINCIPLES",
+      "description": "Core teaching principles for tutorials",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769165338"
+    },
+    {
+      "hash": "acf11f796989cc80648d32022141e20e7ce31ddbbc25ca630cabee980edc04f1",
+      "name": "DIAGRAM_FORMAT",
+      "description": "Standards for diagrams using Mermaid",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769165338"
+    },
+    {
+      "hash": "ded8bf6acee8b98e4ad7dcaf5992772631197f705624b34895c5d7fd98e26420",
+      "name": "NO_METAPHOR",
+      "description": "Why metaphors are forbidden in teaching",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769165338"
+    },
+    {
+      "hash": "b94a0b8d94998ae26e23d1d801561d6ca5926544bde41d2a9aaa0edf872cd342",
+      "name": "OVERVIEW",
+      "description": "-",
+      "format": "md",
+      "category": "context",
+      "created_at": "1769165338"
+    },
+    {
+      "hash": "b50806246f44053a4d4edabfc914b112cc0e1abb2b8ffcaafa534f2623f775a2",
+      "name": "PROGRESS",
+      "description": "-",
+      "format": "md",
+      "category": "context",
+      "created_at": "1769165338"
+    },
+    {
+      "hash": "9934654211ce667ee380e2e9202348ae4abb30dad1933480a7236a021dedc648",
+      "name": "ROADMAP",
+      "description": "-",
+      "format": "md",
+      "category": "context",
+      "created_at": "1769165338"
     }
   ]
 }

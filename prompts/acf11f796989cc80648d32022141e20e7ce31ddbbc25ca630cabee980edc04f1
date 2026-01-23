@@ -1,0 +1,31 @@
+---
+description: Standards for diagrams using Mermaid
+category: conduct
+---
+
+# 图表格式规范
+
+## 交互流程图
+
+多方交互的流程图使用 Mermaid 的 `sequenceDiagram`：
+
+```markdown
+正确：
+​```mermaid
+sequenceDiagram
+    participant P as Prover
+    participant V as Verifier
+    P->>V: R = g^r
+    V->>P: c (随机挑战)
+    P->>V: s = r + c·x
+    V->>V: 验证 g^s = R · y^c
+​```
+
+错误：
+​```
+Prover                    Verifier
+   |                         |
+   | ---- R ---->            |
+   | <--- c ----             |
+​```
+```

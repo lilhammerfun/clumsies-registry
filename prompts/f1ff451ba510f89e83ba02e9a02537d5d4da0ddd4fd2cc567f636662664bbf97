@@ -1,0 +1,32 @@
+---
+description: Annotate terms with English originals
+category: conduct
+---
+
+# 术语标注规范
+
+## 核心原则
+
+首次出现的专业术语必须标注英文原词。
+
+## 格式
+
+```markdown
+正确：
+- 离散对数问题（Discrete Logarithm Problem）
+- 群（Group）
+- 生成元（Generator）
+- 见证（Witness）
+
+错误：
+- 离散对数问题
+- 群
+- 生成元
+```
+
+## 适用范围
+
+- 数学概念
+- 密码学术语
+- 计算机科学术语
+- 任何在该领域有特定含义的词汇

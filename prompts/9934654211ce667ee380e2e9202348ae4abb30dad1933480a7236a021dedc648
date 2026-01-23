@@ -1,0 +1,114 @@
+# 学习路线图
+
+## 最终目标
+
+**成为 zkVM 技术专家，用 Zig 实现一个 zkVM**
+
+---
+
+## 三阶段计划
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│   Phase 1: 理论基础                                              │
+│   ├── RISC-V 指令集                                             │
+│   └── ZK 证明基础                                                │
+│                                                                 │
+│   Phase 2: 源码学习                                              │
+│   ├── Zeam (Zig ETH 共识客户端)                                  │
+│   └── zkVM 项目 (RISC0, SP1, ZisK)                              │
+│                                                                 │
+│   Phase 3: 工程实践                                              │
+│   └── 用 Zig 实现 RISC-V zkVM                                   │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Phase 1: 理论基础
+
+**目标**：具备读懂 zkVM 源码的能力
+
+### RISC-V
+
+- RV32I 指令集与编码
+- 函数调用约定、栈帧
+- 汇编与链接流程
+
+### ZK 证明
+
+- 证明/验证基本概念（witness, public input, prover/verifier）
+- 约束系统（R1CS, AIR）
+- 多项式承诺（FRI, KZG）
+- STARK vs SNARK
+
+---
+
+## Phase 2: 源码学习
+
+**目标**：能给别人讲清楚 zkVM 工作原理
+
+### Zeam 源码
+
+- 模块架构与构建流程
+- Beam Chain 共识协议
+- 状态转换逻辑
+- zkVM 后端集成（RISC0, OpenVM）
+- Zig 工程实践 + Rust FFI
+
+### zkVM 源码
+
+研究 RISC0 或 SP1 的核心流程：
+
+```
+Guest 程序 → ELF 加载 → 指令执行 → Execution Trace
+                                        ↓
+                              Trace → 约束 → 证明
+```
+
+---
+
+## Phase 3: Zig zkVM 实现
+
+**目标**：一个能工作的纯 Zig RISC-V zkVM
+
+### 实现路径
+
+1. **RISC-V 模拟器** — 纯 Zig 实现 RV32IM
+2. **Execution Trace** — 记录每步状态
+3. **FFI 集成** — 调用 Rust 证明后端
+4. **约束生成** — 纯 Zig AIR
+5. **证明系统** — 纯 Zig STARK
+
+### 技术选型
+
+| 组件 | 选择 | 原因 |
+|------|------|------|
+| 语言 | Zig | 目标语言 |
+| 指令集 | RV32IM | 够用，简单 |
+| 证明系统 | STARK | 透明设置 |
+| 有限域 | Goldilocks | 性能好 |
+
+---
+
+## 参考资源
+
+### RISC-V
+- 《RISC-V Reader》Patterson & Waterman
+
+### ZK
+- [ZK Whiteboard Sessions](https://zkhack.dev/whiteboard/)
+- [STARK 101](https://starkware.co/stark-101/)
+
+### zkVM
+- [RISC Zero](https://github.com/risc0/risc0)
+- [SP1](https://github.com/succinctlabs/sp1)
+
+### Zeam
+- [Zeam 仓库](https://github.com/blockblaz/zeam)
+
+### Zig 参考项目
+- [zriscv](https://github.com/leecannon/zriscv) — Zig RISC-V 模拟器
+- [ziggy-starkdust](https://github.com/keep-starknet-strange/ziggy-starkdust) — Zig Cairo VM

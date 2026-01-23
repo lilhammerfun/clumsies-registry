@@ -1,0 +1,20 @@
+---
+description: LaTeX math formatting rules
+category: conduct
+---
+
+# LaTeX 格式规范
+
+## 独立行公式
+
+`$$` 符号必须单独成行：
+
+```markdown
+正确：
+$$
+\exists w : (x, w) \in R
+$$
+
+错误：
+$$\exists w : (x, w) \in R$$
+```
