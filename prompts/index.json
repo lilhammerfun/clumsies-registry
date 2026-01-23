@@ -215,6 +215,14 @@
       "format": "md",
       "category": "context",
       "created_at": "1769165338"
+    },
+    {
+      "hash": "c99fe4d8e8cbde7da8562ad41026b91f11366ceed9fb2c3d369dd98543a7315b",
+      "name": "SUMMARIZE_KNOWLEDGE",
+      "description": "Summarize conversation into structured notes",
+      "format": "md",
+      "category": "command",
+      "created_at": "1769165743"
     }
   ]
 }

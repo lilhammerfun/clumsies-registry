@@ -1,0 +1,21 @@
+---
+description: Summarize conversation into structured notes
+category: command
+---
+
+# 知识整理指令
+
+## 描述
+
+快速整理最近对话中涉及的知识点，生成结构化笔记或者**根据上下文整合到对应的tutorials中**。
+
+## 执行步骤
+
+1. **回顾对话**：扫描最近的对话，提取涉及的知识点。
+2. **生成笔记**：按照`.prompts/conduct`目录下的conduct文件的规范生成tutorial或者tutorial片段。
+3. **确认存放位置**：根据上下文决定是插入到某一tutorial中，还是创建新的tutorial文档。
+4. **更新笔记**：向用户询问方案是否合理，如果用户确认没问题则执行。
+
+## 注意事项
+
+- 重点关注用户在过去讨论中的疑惑点，根据用户的疑惑点生成提取知识的重点。

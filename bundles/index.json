@@ -31,7 +31,8 @@
         { "hash": "8506fa06676efd245c4ac0b0aa12e950d45327f515ac5561a731ff9b46e6028a", "category": "conduct" },
         { "hash": "b79d43512b6ccbdf80c2d9470fedd123d0f415648c24f25fdbc56ca64ccc20a7", "category": "conduct" },
         { "hash": "acf11f796989cc80648d32022141e20e7ce31ddbbc25ca630cabee980edc04f1", "category": "conduct" },
-        { "hash": "ded8bf6acee8b98e4ad7dcaf5992772631197f705624b34895c5d7fd98e26420", "category": "conduct" }
+        { "hash": "ded8bf6acee8b98e4ad7dcaf5992772631197f705624b34895c5d7fd98e26420", "category": "conduct" },
+        { "hash": "c99fe4d8e8cbde7da8562ad41026b91f11366ceed9fb2c3d369dd98543a7315b", "category": "command" }
       ]
     }
   ]
