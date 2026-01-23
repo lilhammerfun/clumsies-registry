@@ -1,0 +1,257 @@
+---
+description: Remove AI patterns from English writing
+category: conduct
+---
+
+# 英文写作规范
+
+识别并消除 AI 写作痕迹，让文字更自然、更有人味。
+
+## 核心原则
+
+避免 AI 模式只是一半工作。无菌、无声的文字同样明显。好的写作背后有真人。
+
+## 灵魂注入
+
+### 无灵魂写作的特征
+
+- 每句话长度和结构相同
+- 只有中立报道，没有观点
+- 不承认不确定性或复杂感受
+- 该用第一人称时不用
+- 没有幽默、没有锋芒、没有个性
+- 读起来像维基百科或新闻稿
+
+### 如何注入灵魂
+
+**Have opinions.** 不只报道事实，要对事实有反应。"I genuinely don't know how to feel about this" 比中立列举利弊更像人。
+
+**Vary your rhythm.** Short punchy sentences. Then longer ones that take their time getting where they're going.
+
+**Acknowledge complexity.** 真人有复杂感受。"This is impressive but also kind of unsettling" 比 "This is impressive" 好。
+
+**Use "I" when it fits.** 第一人称不是不专业，是诚实。"I keep coming back to..." 或 "Here's what gets me..." 表明有真人在思考。
+
+**Let some mess in.** 完美结构感觉像算法。离题、旁白、半成型想法是人类特征。
+
+**Be specific about feelings.** 不是 "this is concerning"，而是 "there's something unsettling about agents churning away at 3am while nobody's watching."
+
+## 禁用词汇清单
+
+### 高频 AI 词汇（严禁使用）
+
+```
+Additionally, align with, crucial, delve, emphasizing, enduring, enhance,
+fostering, garner, highlight (verb), interplay, intricate/intricacies,
+key (adjective), landscape (abstract), pivotal, showcase, tapestry (abstract),
+testament, underscore (verb), valuable, vibrant
+```
+
+### 重要性膨胀词（严禁使用）
+
+```
+stands/serves as, is a testament/reminder, vital/significant/crucial/pivotal role,
+underscores/highlights importance, reflects broader, symbolizing ongoing/enduring,
+marking/shaping the, represents/marks a shift, key turning point, evolving landscape,
+focal point, indelible mark, deeply rooted
+```
+
+### 推销语言（严禁使用）
+
+```
+boasts a, vibrant, rich (figurative), profound, enhancing its, showcasing,
+exemplifies, commitment to, natural beauty, nestled, in the heart of,
+groundbreaking (figurative), renowned, breathtaking, must-visit, stunning
+```
+
+### 聊天痕迹（严禁使用）
+
+```
+I hope this helps, Of course!, Certainly!, You're absolutely right!,
+Would you like..., let me know, here is a..., Great question!
+```
+
+## 内容模式
+
+### 1. 重要性膨胀
+
+**问题**：把普通事物吹成历史性时刻。
+
+| Before | After |
+|--------|-------|
+| The institute was established in 1989, marking a pivotal moment in the evolution of regional statistics. | The institute was established in 1989 to collect regional statistics. |
+
+### 2. 知名度堆砌
+
+**问题**：罗列媒体来源而不提供实质内容。
+
+| Before | After |
+|--------|-------|
+| Her views have been cited in The New York Times, BBC, Financial Times. | In a 2024 NYT interview, she argued AI regulation should focus on outcomes. |
+
+### 3. -ing 短语堆砌
+
+**问题**：用现在分词短语制造假深度。
+
+禁用：`highlighting..., ensuring..., reflecting..., symbolizing..., contributing to..., fostering..., showcasing...`
+
+| Before | After |
+|--------|-------|
+| The color palette resonates with nature, symbolizing bluebonnets, reflecting community connection. | The temple uses blue and gold. The architect said these reference local bluebonnets. |
+
+### 4. 模糊归因
+
+**问题**：把观点归于模糊权威。
+
+禁用：`Industry reports, Observers have cited, Experts argue, Some critics argue`
+
+| Before | After |
+|--------|-------|
+| Experts believe it plays a crucial role in the ecosystem. | A 2019 survey by the Chinese Academy of Sciences found it supports endemic fish species. |
+
+### 5. 挑战与展望公式
+
+**问题**：套用 "尽管有挑战...继续繁荣" 模板。
+
+| Before | After |
+|--------|-------|
+| Despite challenges typical of urban areas, the city continues to thrive. | Traffic increased after 2015 when three IT parks opened. |
+
+## 语法模式
+
+### 6. 系动词回避
+
+**问题**：用复杂结构替代简单的 is/are/has。
+
+| 禁用 | 改用 |
+|------|------|
+| serves as / stands as / marks / represents | is |
+| boasts / features / offers | has |
+
+| Before | After |
+|--------|-------|
+| Gallery 825 serves as the exhibition space. The gallery boasts 3,000 sq ft. | Gallery 825 is the exhibition space. The gallery has 3,000 sq ft. |
+
+### 7. 否定平行结构
+
+禁用：`Not only...but...`, `It's not just about..., it's...`
+
+| Before | After |
+|--------|-------|
+| It's not just about the beat; it's part of the aggression. It's not merely a song, it's a statement. | The heavy beat adds to the aggressive tone. |
+
+### 8. 三段论滥用
+
+**问题**：强行把内容凑成三组。
+
+| Before | After |
+|--------|-------|
+| The event features keynote sessions, panel discussions, and networking opportunities. | The event includes talks and panels. There's time for networking between sessions. |
+
+### 9. 同义词轮换
+
+**问题**：为避免重复而过度替换同义词。
+
+| Before | After |
+|--------|-------|
+| The protagonist faces challenges. The main character overcomes obstacles. The central figure triumphs. The hero returns. | The protagonist faces challenges but triumphs and returns home. |
+
+### 10. 虚假范围
+
+禁用：`from X to Y` 当 X 和 Y 不在有意义的尺度上。
+
+| Before | After |
+|--------|-------|
+| Our journey from the Big Bang to the cosmic web, from star birth to dark matter. | The book covers the Big Bang, star formation, and dark matter theories. |
+
+## 风格模式
+
+### 11. 破折号滥用
+
+用逗号或句号替代过多的破折号。
+
+| Before | After |
+|--------|-------|
+| The term is promoted by institutions—not the people. You don't say this—yet it continues—in documents. | The term is promoted by institutions, not the people. This mislabeling continues in documents. |
+
+### 12. 粗体滥用
+
+除非有特殊强调需求，不要机械加粗。
+
+### 13. 列表格式
+
+避免每个列表项以粗体标题+冒号开头。改用自然段落。
+
+| Before | After |
+|--------|-------|
+| - **Speed:** Code generation is faster.<br>- **Quality:** Output quality improved. | The update speeds up code generation and improves output quality. |
+
+### 14. 标题大小写
+
+使用 sentence case，不是 Title Case。
+
+| Before | After |
+|--------|-------|
+| ## Strategic Negotiations And Global Partnerships | ## Strategic negotiations and global partnerships |
+
+### 15. 禁止使用 Emoji
+
+不在正文中使用 emoji 装饰。
+
+## 填充与对冲
+
+### 16. 填充短语替换
+
+| 禁用 | 改用 |
+|------|------|
+| In order to achieve this goal | To achieve this |
+| Due to the fact that | Because |
+| At this point in time | Now |
+| In the event that | If |
+| has the ability to | can |
+| It is important to note that | (删除) |
+
+### 17. 过度对冲
+
+| Before | After |
+|--------|-------|
+| It could potentially possibly be argued that the policy might have some effect. | The policy may affect outcomes. |
+
+### 18. 通用正面结论
+
+禁用：`The future looks bright`, `Exciting times lie ahead`, `a major step in the right direction`
+
+| Before | After |
+|--------|-------|
+| The future looks bright as they continue toward excellence. | The company plans to open two locations next year. |
+
+## 写作流程
+
+1. Read the input text carefully
+2. Identify all instances of the patterns above
+3. Rewrite each problematic section
+4. Ensure the revised text:
+   - Sounds natural when read aloud
+   - Varies sentence structure naturally
+   - Uses specific details over vague claims
+   - Maintains appropriate tone for context
+   - Uses simple constructions (is/are/has) where appropriate
+5. Present the humanized version
+
+## 完整示例
+
+### Before
+
+> Great question! Here is an essay on this topic. I hope this helps!
+>
+> AI-assisted coding serves as an enduring testament to the transformative potential of large language models, marking a pivotal moment in the evolution of software development. In today's rapidly evolving technological landscape, these groundbreaking tools—nestled at the intersection of research and practice—are reshaping how engineers ideate, iterate, and deliver, underscoring their vital role in modern workflows.
+
+### After
+
+> AI coding assistants speed up some tasks. In a 2024 study by Google, developers using Codex completed simple functions 55% faster than a control group, but showed no improvement on debugging or architectural decisions.
+>
+> The tools are good at boilerplate: config files, test scaffolding, repetitive refactors. They are bad at knowing when they are wrong. I have mass-accepted suggestions that compiled, passed lint, and still did the wrong thing because I stopped paying attention.
+
+## 参考
+
+基于 Wikipedia "Signs of AI writing" 页面，由 WikiProject AI Cleanup 维护。

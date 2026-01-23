@@ -199,6 +199,14 @@
       "format": "md",
       "category": "command",
       "created_at": "1769165743"
+    },
+    {
+      "hash": "e0ebd778f695493cb289b66767ef60eacc6c20870f967265ad5bde7000daebb1",
+      "name": "BASIC_WRITING_EN",
+      "description": "Remove AI patterns from English writing",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769178882"
     }
   ]
 }
