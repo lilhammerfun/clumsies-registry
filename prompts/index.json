@@ -207,6 +207,14 @@
       "format": "md",
       "category": "conduct",
       "created_at": "1769178882"
+    },
+    {
+      "hash": "460dfb5f9ee2543724f6b5ac920cfc6f25e0a6550e085a55d3c2f20a7467ced9",
+      "name": "BASIC_WRITING_ZH",
+      "description": "Remove AI patterns from Chinese writing",
+      "format": "md",
+      "category": "conduct",
+      "created_at": "1769178927"
     }
   ]
 }
